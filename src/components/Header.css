@@ -1,34 +1,31 @@
-/* Base styles */
-
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #111;
     color: white;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    flex: 1 1 100%;
     text-align: center;
+    width: 100%;
     margin-bottom: 10px;
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
+    /* Allow wrapping */
     justify-content: center;
-    gap: 15px;
-    width: 100%;
+    gap: 10px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
-
-/* Links */
 
 .nav a {
     text-decoration: none;
@@ -37,7 +34,10 @@
     font-size: 1rem;
     padding: 8px 12px;
     border-radius: 5px;
+    background-color: transparent;
     transition: background 0.3s;
+    flex: 1 0 auto;
+    /* Allow flexibility without shrinking too much */
 }
 
 .nav a:hover {
@@ -45,11 +45,11 @@
 }
 
 
-/* Mobile tweaks */
+/* Optional: Reduce font size on small screens */
 
-@media (max-width: 600px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 500px) {
+    .nav a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
     }
 }
