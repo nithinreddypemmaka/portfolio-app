@@ -1,0 +1,33 @@
+.skill-card {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 14px;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3a3a3a80;
+}

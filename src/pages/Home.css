@@ -1,0 +1,53 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 60px 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.home-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.home-text {
+    max-width: 500px;
+    color: #c0c0c0;
+    /* silver */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    /* thin font */
+}
+
+.home-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
