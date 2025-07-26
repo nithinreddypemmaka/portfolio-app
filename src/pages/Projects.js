@@ -4,7 +4,7 @@ import './Projects.css';
 export const Projects =() => {
     return (
         <div className="projects-container">
-            <h1>📂 My Projects</h1>
+            <h1>My Projects</h1>
             {/*Project 1*/}
             <div className="project-card">
                 <h2>Online Food Ordering System</h2>

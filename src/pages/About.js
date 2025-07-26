@@ -1,6 +1,7 @@
 import React from "react";
 import { SkillCard } from "../components/SkillCard.js";
 import './About.css';
+
 import css from '../assets/css.jpg';
 import html from '../assets/html.jpg';
 import js from '../assets/js.jpg';
@@ -26,10 +27,16 @@ export const About = () => {
       <p>
         I'm committed to writing clean, maintainable code and constantly improving my skills. I'm now seeking opportunities to join a dynamic development team and grow as a software engineer.
       </p>
-
-      <h3 style={{ marginTop: '30px' }}>💻 Technical Skills</h3>
+      <h3 style={{ marginTop: '30px' }}> Education</h3>
+      <p>
+        <strong>Bachelor of Technology (Mechanical Engineering)</strong><br />
+        Madanapalle Institute of Technology and Science<br />
+        2021 – 2024<br />
+        <strong>CGPA:</strong> 8.5
+      </p>
+      <h3 style={{ marginTop: '30px' }} id = 'skills'> Technical Skills</h3>
       
-      <div className="skills-grid">
+      <div className="skills-grid" >
         <SkillCard name="Java" image= {java} />
         <SkillCard name="Python" image= {python} />
         <SkillCard name="HTML" image= {html} />
@@ -38,21 +45,13 @@ export const About = () => {
         <SkillCard name="React" image={react} />
       </div>
 
-      <h3 style={{ marginTop: '30px' }}>📜 Certifications</h3>
+      <h3 style={{ marginTop: '30px' }} id="certifications"> Certifications</h3>
       <div className="certificates-grid">
         <Certificate name="Java" image={javaCert} />
         <Certificate name="SQL" image={sqlCert} />
         <Certificate name="Python" image={pythonCert} />
       </div>
       
-
-      <h3 style={{ marginTop: '30px' }}>🎓 Education</h3>
-      <p>
-        <strong>Bachelor of Technology (Mechanical Engineering)</strong><br />
-        Madanapalle Institute of Technology and Science<br />
-        2021 – 2024<br />
-        <strong>CGPA:</strong> 8.5
-      </p>
     </div>
   );                
 };
